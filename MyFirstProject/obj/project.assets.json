@@ -8,24 +8,31 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Studente\\.nuget\\packages\\": {}
+    "C:\\Users\\Elia\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Studente\\Desktop\\C# lezione 1\\MyFirstProject\\MyFirstProject.csproj",
+      "projectUniqueName": "C:\\Users\\Elia\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
       "projectName": "MyFirstProject",
-      "projectPath": "C:\\Users\\Studente\\Desktop\\C# lezione 1\\MyFirstProject\\MyFirstProject.csproj",
-      "packagesPath": "C:\\Users\\Studente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Studente\\Desktop\\C# lezione 1\\MyFirstProject\\obj\\",
+      "projectPath": "C:\\Users\\Elia\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "packagesPath": "C:\\Users\\Elia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elia\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Studente\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Elia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -65,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
