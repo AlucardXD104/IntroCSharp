@@ -19,7 +19,8 @@ class Program
 
         // ReadLineExamples();
         // VariableOperationsExamples();
-        Compiti();
+        Compiti1();
+        Compiti2();
     }
     public static void ReadLineExamples()
     {
@@ -61,12 +62,18 @@ class Program
     //    int resto = a % b;
     //    Console.WriteLine($"Resto di A e B = {resto}");
     } 
-    public static void Compiti ()
+    public static void Compiti1 ()
 {
         Console.WriteLine($"\n---- OperazioneAritmetica");
         int a = 20;
         int b = 30;
         int sum = a + b;
         Console.WriteLine($"prodotto di a + b = {sum}");
+        double discount ='20%';
+        Console.WriteLine($"prodotto di a + b = {sum} - discount");
 }  
+    public static void Compiti2 ()
+    {
+        
+    }
 }

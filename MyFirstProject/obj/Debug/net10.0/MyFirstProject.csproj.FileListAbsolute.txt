@@ -12,3 +12,18 @@ C:\Users\Studente\Desktop\C# lezione 1\MyFirstProject\obj\Debug\net10.0\refint\M
 C:\Users\Studente\Desktop\C# lezione 1\MyFirstProject\obj\Debug\net10.0\MyFirstProject.pdb
 C:\Users\Studente\Desktop\C# lezione 1\MyFirstProject\obj\Debug\net10.0\MyFirstProject.genruntimeconfig.cache
 C:\Users\Studente\Desktop\C# lezione 1\MyFirstProject\obj\Debug\net10.0\ref\MyFirstProject.dll
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\bin\Debug\net10.0\MyFirstProject.exe
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\bin\Debug\net10.0\MyFirstProject.deps.json
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\bin\Debug\net10.0\MyFirstProject.runtimeconfig.json
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\bin\Debug\net10.0\MyFirstProject.dll
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\bin\Debug\net10.0\MyFirstProject.pdb
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.AssemblyInfoInputs.cache
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.AssemblyInfo.cs
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.csproj.CoreCompileInputs.cache
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.sourcelink.json
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.dll
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\refint\MyFirstProject.dll
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.pdb
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\MyFirstProject.genruntimeconfig.cache
+C:\Users\Elia\Documents\GitHub\IntroCSharp\MyFirstProject\obj\Debug\net10.0\ref\MyFirstProject.dll
