@@ -18,7 +18,8 @@ class Program
         // Console.WriteLine($"num3 {num3} --- num4 {num4}");
 
         // ReadLineExamples();
-        VariableOperationsExamples();
+        // VariableOperationsExamples();
+        Compiti();
     }
     public static void ReadLineExamples()
     {
@@ -44,21 +45,28 @@ class Program
     }
     public static void VariableOperationsExamples()
     {
-       Console.WriteLine($"Inserici 2 numeri");
-       int a = int.Parse(Console.ReadLine());
-       int b = int.Parse(Console.ReadLine());
+    //    Console.WriteLine($"Inserici 2 numeri");
+    //    int a = int.Parse(Console.ReadLine());
+    //    int b = int.Parse(Console.ReadLine());
 
-       Console.WriteLine($"\n---- Operazione Aritemetica\n");
-       int sum = a + b;
-       Console.WriteLine($"Somma di A + B = {sum}");
-       int diff = a - b;
-       Console.WriteLine($"Sottrazione di A - B = {diff}");
-       double div = a / b;
-       Console.WriteLine($"Divisione di A / B = {div}");
-       int prod = a * a;
-       Console.WriteLine($"Prodotto di A * B = {prod}");
-       int resto = a % b;
-       Console.WriteLine($"Resto di A e B = {resto}");
-    }
-
+    //    Console.WriteLine($"\n---- Operazione Aritemetica\n");
+    //    int sum = a + b;
+    //    Console.WriteLine($"Somma di A + B = {sum}");
+    //    int diff = a - b;
+    //    Console.WriteLine($"Sottrazione di A - B = {diff}");
+    //    double div = a / b;
+    //    Console.WriteLine($"Divisione di A / B = {div}");
+    //    int prod = a * a;
+    //    Console.WriteLine($"Prodotto di A * B = {prod}");
+    //    int resto = a % b;
+    //    Console.WriteLine($"Resto di A e B = {resto}");
+    } 
+    public static void Compiti ()
+{
+        Console.WriteLine($"\n---- OperazioneAritmetica");
+        int a = 20;
+        int b = 30;
+        int sum = a + b;
+        Console.WriteLine($"prodotto di a + b = {sum}");
+}  
 }
