@@ -64,16 +64,26 @@ class Program
     } 
     public static void Compiti1 ()
 {
-        Console.WriteLine($"\n---- OperazioneAritmetica");
-        int a = 20;
-        int b = 30;
-        int sum = a + b;
-        Console.WriteLine($"prodotto di a + b = {sum}");
-        double discount ='20%';
-        Console.WriteLine($"prodotto di a + b = {sum} - discount");
+    // SBAGLIATO/NON FINITO
+        // Console.WriteLine($"\n---- OperazioneAritmetica");
+        // int a = 20;
+        // int b = 30;
+        // int sum = a + b;
+        // Console.WriteLine($"prodotto di a + b = {sum}");
+        // double discount =20% // MODIFICATO PER ESIGENZA
+        // Console.WriteLine($"prodotto di a + b = {sum} - discount");
+        // float check = 60;
+        // Console.WriteLine($"prodotto di a + b = {sum} - discount");
 }  
     public static void Compiti2 ()
     {
-        
+        Console.WriteLine($"fornisci 2 numeri");
+        int età = int.Parse(Console.ReadLine());
+        float altezza = float.Parse(Console.ReadLine());
+        int circaltezza = (int)altezza;
+
+        Console.WriteLine($"\n---- Operazione Aritemetica\n");
+        int sum = età + circaltezza;
+        Console.WriteLine($"Somma di età + altezza = {sum}");
     }
 }
