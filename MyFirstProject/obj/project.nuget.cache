@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "sQ+XKwkJt40=",
+  "dgSpecHash": "SYtpf4qC65w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elia\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+  "projectFilePath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

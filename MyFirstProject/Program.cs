@@ -19,8 +19,14 @@ class Program
 
         // ReadLineExamples();
         // VariableOperationsExamples();
-        Compiti1();
-        Compiti2();
+        // Compiti1();
+        // Esercizio2();
+        // Esercizio3();
+        // Esercizio4();
+        // SCExemples();
+        // EsercizioIFELSE1pag38();
+        // EsercizioIFELSE2pag38();
+        EsercizioIFELSE3pag39();
     }
     public static void ReadLineExamples()
     {
@@ -61,21 +67,33 @@ class Program
     //    Console.WriteLine($"Prodotto di A * B = {prod}");
     //    int resto = a % b;
     //    Console.WriteLine($"Resto di A e B = {resto}");
+
     } 
     public static void Compiti1 ()
 {
     // SBAGLIATO/NON FINITO
-        // Console.WriteLine($"\n---- OperazioneAritmetica");
-        // int a = 20;
-        // int b = 30;
-        // int sum = a + b;
-        // Console.WriteLine($"prodotto di a + b = {sum}");
-        // double discount =20% // MODIFICATO PER ESIGENZA
-        // Console.WriteLine($"prodotto di a + b = {sum} - discount");
-        // float check = 60;
-        // Console.WriteLine($"prodotto di a + b = {sum} - discount");
+        Console.WriteLine($"\n---- OperazioneAritmetica");
+        int a = 20;
+        int b = 30;
+        int sum = a + b;
+        Console.WriteLine($"prodotto di a + b = {sum}");
 }  
-    public static void Compiti2 ()
+    public static void Esercizio2()
+    {
+        double discount = 20;
+        double price = 100;
+        double discountedPrice = price - (price * discount / 100);
+        //prezzo - (prezzo * disocunt / 100)
+        Console.WriteLine($" totale prodotto scontato = {discountedPrice}");
+    
+    }
+    public static void Esercizio3()
+    {
+        float a = 10.567f;
+        bool isPositive = a >= 0;
+        Console.WriteLine($"{a} è Positivo? {isPositive}");
+    }
+    public static void Esercizio4 ()
     {
         Console.WriteLine($"fornisci 2 numeri");
         int età = int.Parse(Console.ReadLine());
@@ -85,5 +103,89 @@ class Program
         Console.WriteLine($"\n---- Operazione Aritemetica\n");
         int sum = età + circaltezza;
         Console.WriteLine($"Somma di età + altezza = {sum}");
+    }
+    public static void SCExemples()
+    {
+        Console.Write($"Inserici il Primo Numero");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write($"Inserici il Secondo Numero");
+        int b = int.Parse(Console.ReadLine());
+
+
+        
+        if(a < b && a > 2)
+        {
+            Console.WriteLine($"{a} minore di {b}");
+        }
+        else if (a > b)
+        {
+            Console.WriteLine($"{a} maggiore di {b}");
+        }
+        else if (a != b)
+        {
+            Console.WriteLine($"{a} diverso di {b}");
+        }
+        else
+        {
+            Console.WriteLine($"{a} uguale a {b}");
+        }
+    }
+    
+    public static void EsercizioIFELSE1pag38()
+    {
+        Console.WriteLine($"inserisci la tua età");
+        int età = int.Parse(Console.ReadLine());
+
+        if(età >= 18)
+        {
+            Console.WriteLine($"maggiorenne");
+        }
+        else
+        {
+            Console.WriteLine($"minorenne");
+        }
+    }
+
+    public static void EsercizioIFELSE2pag38()
+    {
+        Console.Write($"Diciarare il Prezzo del Prodotto");
+        float Prezzo = float.Parse(Console.ReadLine());
+
+        if(Prezzo > 100.000)
+        {
+            int sconto = 80;
+            int scontocirca = (int)sconto;
+            float PrezzoScontato = Prezzo - (Prezzo * scontocirca / 100);
+            Console.Write($"il conto ammonta a {PrezzoScontato:F2} perhcè ai speso più di 100€");
+        }
+        else
+        {
+            Console.Write($"il conto ammota a {Prezzo}€");
+        }
+    }
+
+    public static void EsercizioIFELSE3pag39 ()
+    {
+        Console.WriteLine($"Scrivi Tre Numeri Interi");
+        int N1 = int.Parse(Console.ReadLine());
+        int N2 = int.Parse(Console.ReadLine());
+        int N3 = int.Parse(Console.ReadLine());
+        int sum = N1 + N2 + N3;
+        double media = (double)sum / 3;
+
+        if(media >= 60)
+        {
+            Console.WriteLine($"hai superato la prova!");
+            Console.WriteLine($"risultato {media:F2}");
+        }
+        else
+        {
+            Console.WriteLine($"prova fallita");
+            Console.WriteLine($"risultato {media:F2}");
+        }
+    }
+    public static void EsercizioIFELSE4pag41()
+    {
+        
     }
 }
