@@ -27,7 +27,9 @@ class Program
         // EsercizioIFELSE1pag38();
         // EsercizioIFELSE2pag38();
         // EsercizioIFELSE3pag39();
-        EsercizioIFELSE4pag41();
+        // EsercizioIFELSE4pag41();
+        // EsercizioIFELSE5pag42();
+        EsercizioIFELSE6pag45();
     }
     public static void ReadLineExamples()
     {
@@ -188,16 +190,44 @@ class Program
     public static void EsercizioIFELSE4pag41()
     {
         Console.WriteLine($"Inserire password");
-        int utente = int.Parse(Console.ReadLine());
-        int password = 124;
+        string utente = (Console.ReadLine());
+        string password = "maurizio";
         
-        if(password == utente)
+        if(utente == password)
         {
             Console.WriteLine($"accesso consentito");
         }
         else
         {
             Console.WriteLine($"accesso negato");
+        }
+    }
+    public static void EsercizioIFELSE5pag42()
+    {
+        //NON O CAPITO?
+    }
+    public static void EsercizioIFELSE6pag45()
+    {
+        Console.WriteLine($"inserisci un numero da 1 a 10");   
+        int Voto = int.Parse(Console.ReadLine());
+        
+        if(Voto >= 1 && Voto <=4)
+        {
+            Console.WriteLine($"insufficente");
+        }
+        else if (Voto >= 5 && Voto <= 6)
+        {
+            Console.WriteLine($"sufficente");
+        }
+
+        else if (Voto >= 7 && Voto <= 8)
+        {
+            Console.WriteLine($"buono");
+        }
+
+        else if (Voto >= 9 && Voto <= 10)
+        {
+            Console.WriteLine($"ottimo");
         }
     }
 }
