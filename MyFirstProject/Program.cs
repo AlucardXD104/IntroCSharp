@@ -26,7 +26,8 @@ class Program
         // SCExemples();
         // EsercizioIFELSE1pag38();
         // EsercizioIFELSE2pag38();
-        EsercizioIFELSE3pag39();
+        // EsercizioIFELSE3pag39();
+        EsercizioIFELSE4pag41();
     }
     public static void ReadLineExamples()
     {
@@ -186,6 +187,17 @@ class Program
     }
     public static void EsercizioIFELSE4pag41()
     {
+        Console.WriteLine($"Inserire password");
+        int utente = int.Parse(Console.ReadLine());
+        int password = 124;
         
+        if(password == utente)
+        {
+            Console.WriteLine($"accesso consentito");
+        }
+        else
+        {
+            Console.WriteLine($"accesso negato");
+        }
     }
 }
