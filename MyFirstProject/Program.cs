@@ -29,7 +29,9 @@ class Program
         // EsercizioIFELSE3pag39();
         // EsercizioIFELSE4pag41();
         // EsercizioIFELSE5pag42();
-        EsercizioIFELSE6pag45();
+        // EsercizioIFELSE6pag45();
+        // EsercizioIFELSE7pag45();
+        EsercizioIFELSE8pag46();
     }
     public static void ReadLineExamples()
     {
@@ -228,6 +230,51 @@ class Program
         else if (Voto >= 9 && Voto <= 10)
         {
             Console.WriteLine($"ottimo");
+        }
+    }
+    public static void EsercizioIFELSE7pag45()
+    {
+        Console.WriteLine($"Inserisci il Tuo BMI");
+        float Altezza = float.Parse(Console.ReadLine());
+        float Peso = float.Parse(Console.ReadLine());
+        float BMI = Peso /(Altezza*Altezza);
+            if(BMI < 18.5)
+        {
+                Console.WriteLine($"sottopeso");
+        }
+            else if (18.5 <= BMI && BMI < 25)
+        {
+                Console.WriteLine($"Normopeso");
+        }
+            else if (25 <= BMI && BMI < 30)
+        {
+                Console.WriteLine($"sovrappeso");
+        }
+            else 
+        {
+                Console.WriteLine($"Obesità");
+        }  
+    }
+    public static void EsercizioIFELSE8pag46()
+    {
+        Console.WriteLine($"inserisci una temperatura");
+        float temperatura = float.Parse(Console.ReadLine());
+        Console.WriteLine($"hai insrtito {temperatura} Celsius");
+        Console.WriteLine($"ora scegli in quale altra schala convertirla");
+
+        Console.WriteLine($"Digita 1 se vuoi la scala Fahrenheit, 2 per la Kelvine e 3 per la Rankine");
+        int Scelta = int.Parse(Console.ReadLine());
+        if ( Scelta == 1)
+        {
+            Console.WriteLine($"{temperatura} Fahrenheit");
+        }
+        else if (Scelta == 2)
+        {
+            Console.WriteLine($"{temperatura} Krlvine");
+        }
+        else
+        {
+            Console.WriteLine($"{temperatura} Rankine");
         }
     }
 }
