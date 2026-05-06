@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -31,7 +32,10 @@ class Program
         // EsercizioIFELSE5pag42();
         // EsercizioIFELSE6pag45();
         // EsercizioIFELSE7pag45();
-        EsercizioIFELSE8pag46();
+        // EsercizioIFELSE8pag46();
+        // Es1pag48();
+        // Es1pag54 ();
+        Es2pag54 ();
     }
     public static void ReadLineExamples()
     {
@@ -238,6 +242,7 @@ class Program
         float Altezza = float.Parse(Console.ReadLine());
         float Peso = float.Parse(Console.ReadLine());
         float BMI = Peso /(Altezza*Altezza);
+        Console.WriteLine($"BMI {BMI}");
             if(BMI < 18.5)
         {
                 Console.WriteLine($"sottopeso");
@@ -277,4 +282,60 @@ class Program
             Console.WriteLine($"{temperatura} Rankine");
         }
     }
-}
+    public static void Es1pag48 ()
+    {
+        Console.WriteLine($"Inserisci un Numero da 1 a 7");
+        
+        switch (Console.ReadLine())
+        {
+            case "1":
+                Console.WriteLine($"è Lunedi");
+                break;
+
+            case "2":
+                Console.WriteLine($"è Martedi");
+                break;
+
+            case "3":
+                Console.WriteLine($"è Mercoledì");
+                break;
+
+            case "4":
+                Console.WriteLine($"è Giovedì");
+                break;
+
+            case "5":
+                Console.WriteLine($"è Venerdì");
+                break;
+
+            case "6":
+                Console.WriteLine($"è Sabato");
+                break;
+
+            case "7":
+                Console.WriteLine($"è Domenica");
+            break;
+
+            default:
+                Console.WriteLine($"Ti o chiesto numeri tra 1 e 7, scemo");
+                break;
+        }
+    }
+    public static void Es1pag54 ()
+    {
+        Console.WriteLine($"Inserisci dei numeri interi positivi");
+        int numero = int.Parse(Console.ReadLine());
+
+        while (numero > 0 && numero <= 100; numero++)
+        {
+            if (numero < 0)
+        {
+            Console.WriteLine($"Sbagliato");
+        }
+        }
+        }
+        public static void Es2pag54 ()
+    {
+        
+    }
+    }
