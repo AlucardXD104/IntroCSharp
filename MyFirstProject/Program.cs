@@ -336,6 +336,21 @@ class Program
         }
         public static void Es2pag54 ()
     {
+        Console.WriteLine($"Indovina il numero segreto");
+        int NumeroS = 11;
+        int NumeroU = 0;
+        int Risposta = int.Parse(Console.ReadLine());
         
+            while (Risposta == NumeroS)
+        {
+            if(Risposta > NumeroS && Risposta < NumeroS)
+            {
+                Console.WriteLine($"Numero Sbalgiato, Riprova");
+            }
+            else
+            {
+                Console.WriteLine($"Ai Indovitano!!");
+            }
+        }
     }
     }
