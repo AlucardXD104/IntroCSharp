@@ -1,4 +1,5 @@
 ﻿using System.Runtime.Intrinsics.Arm;
+using System.Security;
 using System.Security.Cryptography.X509Certificates;
 
 class Program
@@ -35,7 +36,8 @@ class Program
         // EsercizioIFELSE8pag46();
         // Es1pag48();
         // Es1pag54 ();
-        Es2pag54 ();
+        // Es2pag54 ();
+        Es1pag57 ();
     }
     public static void ReadLineExamples()
     {
@@ -321,36 +323,63 @@ class Program
                 break;
         }
     }
-    public static void Es1pag54 ()
-    {
-        Console.WriteLine($"Inserisci dei numeri interi positivi");
-        int numero = int.Parse(Console.ReadLine());
+    // public static void Es1pag54 ()
+    // {
+    //     Console.WriteLine($"Inserisci dei numeri interi positivi");
+    //     int numero = int.Parse(Console.ReadLine());
 
-        while (numero > 0 && numero <= 100; numero++)
-        {
-            if (numero < 0)
-        {
-            Console.WriteLine($"Sbagliato");
-        }
-        }
-        }
+    //     while (numero > 0 && numero <= 100; (numero++))
+    //     {
+    //         if (numero < 0)
+    //     {
+    //         Console.WriteLine($"Sbagliato");
+    //     }
+    //     }
+    //     }
         public static void Es2pag54 ()
     {
-        Console.WriteLine($"Indovina il numero segreto");
+        Console.WriteLine($"Indovina il numero segreto Fra 0 e 20");
         int NumeroS = 11;
-        int NumeroU = 0;
         int Risposta = int.Parse(Console.ReadLine());
         
             while (Risposta == NumeroS)
         {
-            if(Risposta > NumeroS && Risposta < NumeroS)
+            if(Risposta > NumeroS)
             {
-                Console.WriteLine($"Numero Sbalgiato, Riprova");
+                Console.WriteLine($"il Numero {Risposta} Troppo alto, Riprova");
+            }
+            else if (Risposta < NumeroS)
+            {
+                Console.WriteLine($"il Numero {Risposta} Troppo Basso, Riprova");
             }
             else
             {
-                Console.WriteLine($"Ai Indovitano!!");
+                Console.WriteLine($"Hai Indovitato!!");
             }
         }
     }
+    public static void Es1pag55()
+    {
+        //Cosa?
+    }
+    public static void Es1pag57 ()
+    {
+        Console.WriteLine($"Inserisci Password");
+        string Verifica = Console.ReadLine();
+        bool Password = true;
+        do
+        {
+            if (Password == true)
+            {
+                Console.WriteLine($"Accesso Consentito");
+            }
+            else
+            {
+                Console.WriteLine($"Accesso Negato");
+                
+            }
+        }  
+        while (Password);
+    }
+    //Ci o Provato, Invoco il Perdono Prof, non sono degno
     }
