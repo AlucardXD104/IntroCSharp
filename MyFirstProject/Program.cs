@@ -1,4 +1,5 @@
-﻿using System.Runtime.Intrinsics.Arm;
+﻿using System.Collections.Concurrent;
+using System.Runtime.Intrinsics.Arm;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 
@@ -7,6 +8,7 @@ class Program
     static int age = 30;
     static int Age = 50;
     
+
     public static void Main(string[] args)
     {
         // Console.WriteLine ("Hello, world");
@@ -37,8 +39,10 @@ class Program
         // Es1pag48();
         // Es1pag54 ();
         // Es2pag54 ();
-        Es1pag57 ();
+        // Es1pag57 ();
+        Es1pag59 ();
     }
+
     public static void ReadLineExamples()
     {
         // Console.Write($"Dì il tuo nome e congniome: ");
@@ -140,8 +144,7 @@ class Program
         {
             Console.WriteLine($"{a} uguale a {b}");
         }
-    }
-    
+    }    
     public static void EsercizioIFELSE1pag38()
     {
         Console.WriteLine($"inserisci la tua età");
@@ -156,7 +159,6 @@ class Program
             Console.WriteLine($"minorenne");
         }
     }
-
     public static void EsercizioIFELSE2pag38()
     {
         Console.Write($"Diciarare il Prezzo del Prodotto");
@@ -174,7 +176,6 @@ class Program
             Console.Write($"il conto ammota a {Prezzo}€");
         }
     }
-
     public static void EsercizioIFELSE3pag39 ()
     {
         Console.WriteLine($"Scrivi Tre Numeri Interi");
@@ -323,27 +324,35 @@ class Program
                 break;
         }
     }
-    // public static void Es1pag54 ()
-    // {
-    //     Console.WriteLine($"Inserisci dei numeri interi positivi");
-    //     int numero = int.Parse(Console.ReadLine());
+    public static void Es1pag54 ()
+    {
+        Console.WriteLine($"Inserisci dei numeri interi positivi");
+        int numero = 0,somma = 0;
 
-    //     while (numero > 0 && numero <= 100; (numero++))
-    //     {
-    //         if (numero < 0)
-    //     {
-    //         Console.WriteLine($"Sbagliato");
-    //     }
-    //     }
-    //     }
-        public static void Es2pag54 ()
+
+        while (numero >= 0 && numero <= 100)
+        {
+            Console.WriteLine($"Inserisci un numero intero positivo");
+            numero = int.Parse(Console.ReadLine());
+            if (numero < 0)
+            {
+                Console.WriteLine($"Sbagliato");
+            }
+            else
+            {
+                somma += numero;
+            }
+        }
+        Console.WriteLine($"La somma dei numeri inseriti è {somma}");
+    }
+    public static void Es2pag54 ()
     {
         Console.WriteLine($"Indovina il numero segreto Fra 0 e 20");
         int NumeroS = 11;
-        int Risposta = int.Parse(Console.ReadLine());
-        
-            while (Risposta == NumeroS)
+        int Risposta = NumeroS;
+        while (Risposta == NumeroS)
         {
+            Risposta = int.Parse(Console.ReadLine());
             if(Risposta > NumeroS)
             {
                 Console.WriteLine($"il Numero {Risposta} Troppo alto, Riprova");
@@ -365,21 +374,37 @@ class Program
     public static void Es1pag57 ()
     {
         Console.WriteLine($"Inserisci Password");
-        string Verifica = Console.ReadLine();
-        bool Password = true;
+        int Password = 2567;
+        int Ntentativi = 3;
+        bool accesso = false;
         do
         {
-            if (Password == true)
+            int Verifica = int.Parse(Console.ReadLine());
+            if (Password == Verifica)
             {
                 Console.WriteLine($"Accesso Consentito");
+                accesso = true;
             }
             else
             {
+                Ntentativi--;
                 Console.WriteLine($"Accesso Negato");
-                
             }
+            Console.WriteLine($"{Ntentativi}");
         }  
-        while (Password);
+        while (accesso == false && Ntentativi > 0);
     }
-    //Ci o Provato, Invoco il Perdono Prof, non sono degno
+    public static void Es1pag59 ()
+    {
+        Console.WriteLine($"inserisci il numero e ti dirò la sua tebella");
+        int N1 = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{N1} * {i}={N1 * i}");
+        }
+    }
+    public static void Es2pag59 ()
+    {
+        
+    }
     }
