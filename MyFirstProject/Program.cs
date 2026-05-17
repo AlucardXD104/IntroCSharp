@@ -36,11 +36,14 @@ class Program
         // EsercizioIFELSE6pag45();
         // EsercizioIFELSE7pag45();
         // EsercizioIFELSE8pag46();
-        // Es1pag48();
+        // Es1pag48 ();
         // Es1pag54 ();
         // Es2pag54 ();
-        // Es1pag57 ();
-        Es1pag59 ();
+        // Es1pag55 ();
+        // Es1pag57 ()
+        // Es2pag57 (); //Non ci sono arrivato, PERDONO
+        Es3pag57 ();
+        // Es1pag59 ();
     }
 
     public static void ReadLineExamples()
@@ -369,7 +372,33 @@ class Program
     }
     public static void Es1pag55()
     {
-        //Cosa?
+        Console.Write($"Digita il numero corrispondente all'oppione desiderata");
+        Console.WriteLine($"1 Visualizza Saldo-2 Deposita Denaro-3 Preleva denaro-4 Esci");
+        int VisualizzaConto = 1;
+        int DepositaDenaro = 2;
+        int PrelevaDenaro = 3;
+        int Risposta = 0;
+
+        while (Risposta == 0)
+        {
+            Risposta = int.Parse(Console.ReadLine());
+            if(Risposta == VisualizzaConto)
+            {
+                Console.WriteLine($"Accesso al Conto Effettuato");
+            }
+            else if(Risposta == DepositaDenaro)
+            {
+                Console.WriteLine($"Accesso al Deposito Effettuato");
+            }
+            else if(Risposta == PrelevaDenaro)
+            {
+                Console.WriteLine($"Effettuato Prelievo di Denaro");
+            }
+            else
+            {
+                Console.WriteLine($"Sei Uscito con Successo");
+            }
+        }
     }
     public static void Es1pag57 ()
     {
@@ -394,6 +423,30 @@ class Program
         }  
         while (accesso == false && Ntentativi > 0);
     }
+    // public static void Es2pag57 ()
+    // {
+    //     Console.WriteLine($"Inserisci numeri interi, se inserisci lo zero annulli il programma");
+    //     bool Esci = false;
+
+    //     do
+    //     {
+    //         int Numeri = int.Parse(Console.ReadLine());
+
+    //     }
+    //     while ()
+    // }
+    // public static void Es3pag57 ()
+    // {
+    //     Console.WriteLine($"chiedi una operazione");
+    //     bool esci = false;
+    //     do
+    //     {
+    //         int N1 = int.Parse(Console.ReadLine());
+    //         int N2 = int.Parse(Console.ReadLine());
+    //         if ()
+    //     }
+    //     while (esci == false);
+    // }
     public static void Es1pag59 ()
     {
         Console.WriteLine($"inserisci il numero e ti dirò la sua tebella");
@@ -405,6 +458,12 @@ class Program
     }
     public static void Es2pag59 ()
     {
-        
+        Console.WriteLine($"quanti numeri vuoi inserire?");
+        int Num = int.Parse(Console.ReadLine());
+        int volte = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{Num} + {i}={Num * volte}");
+        }
     }
     }
