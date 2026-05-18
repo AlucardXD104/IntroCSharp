@@ -41,9 +41,11 @@ class Program
         // Es2pag54 ();
         // Es1pag55 ();
         // Es1pag57 ()
-        // Es2pag57 (); //Non ci sono arrivato, PERDONO
-        Es3pag57 ();
+        // Es2pag57 ();
+        // Es3pag57 ();
         // Es1pag59 ();
+        // Es2pag59 ();
+        int[] 
     }
 
     public static void ReadLineExamples()
@@ -459,11 +461,13 @@ class Program
     public static void Es2pag59 ()
     {
         Console.WriteLine($"quanti numeri vuoi inserire?");
-        int Num = int.Parse(Console.ReadLine());
         int volte = int.Parse(Console.ReadLine());
-        for (int i = 1; i <= 10; i++)
+        int somma = 0;
+        for (int i = 0; i < volte; i++)
         {
-            Console.WriteLine($"{Num} + {i}={Num * volte}");
+            Console.Write($"inserisci numero: ");
+            somma += int.Parse(Console.ReadLine());
         }
+        Console.WriteLine($"Media dei Valori = {somma / volte}");
     }
     }
