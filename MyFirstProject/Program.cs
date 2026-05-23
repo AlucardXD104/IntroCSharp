@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Net.Mail;
 using System.Runtime.Intrinsics.Arm;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
@@ -40,12 +41,13 @@ class Program
         // Es1pag54 ();
         // Es2pag54 ();
         // Es1pag55 ();
-        // Es1pag57 ()
+        // Es1pag57 ();
         // Es2pag57 ();
         // Es3pag57 ();
         // Es1pag59 ();
         // Es2pag59 ();
-        Es1pag114 ();
+        // Es1pag114 ();
+        EsercizioComplessivo_Do_While_For();
     }
 
     public static void ReadLineExamples()
@@ -326,7 +328,7 @@ class Program
 
             default:
                 Console.WriteLine($"Ti o chiesto numeri tra 1 e 7, scemo");
-                break;
+            break;
         }
     }
     public static void Es1pag54 ()
@@ -482,6 +484,75 @@ class Program
             somma += int.Parse(Console.ReadLine());
         }
         Console.WriteLine($"Somma Dei Dati Inseriti {somma + lunghezza}");
-        
     }
+        public static void EsercizioComplessivo_Do_While_For()
+        {
+            Console.WriteLine($"Impista i Tuoi Dati");
+            Console.WriteLine($"Imposta il Tuo Nome");
+            string Utente = (Console.ReadLine());
+            Console.WriteLine($"Imposta una Password");
+            string Utente2 = (Console.ReadLine());
+            int ContoallaRovescia = 6;
+            bool accesso = false;
+                do
+            {
+                Console.WriteLine($"Inserisci Dati di Sblocco");
+                Console.Write($"Nome: ");
+                    string Nome = (Console.ReadLine());
+                Console.Write($"Password: ");
+                    string Password = (Console.ReadLine());
+                    if(Nome == Utente && Password == Utente2)
+                {
+                    for(int i = 0; i > ContoallaRovescia; i++)
+                    Console.WriteLine($"Accesso Consentito, Ora hai 6 scelte Prima di essere Espulso dal Programma");
+                    Console.WriteLine($"1.Dizionario");
+                    Console.WriteLine($"2.Bestiario di D&D");
+                    Console.WriteLine($"3.Notizie sul Mondo dei VideoGiochi");
+                    Console.WriteLine($"4.Consigli Per la Dieta");
+                    Console.WriteLine($"5.Previsioni del Tempo");
+                    Console.WriteLine($"6.Andar per Funghi?");
+                {
+                    switch (Console.ReadLine())
+                    {
+                        case "1":
+                            Console.Write($"La Lingia Italiana ha al momento ha 2 milioni se si contano tutte le possibili declinazioni e coniugazioni");
+                            ContoallaRovescia--;
+                        break;
+
+                        case "2":
+                            Console.Write($"Il Numero di Entità all'interno del bestiario varia a seconda del manuale, nella quinta edizione conta 500 creature, nel Manuale dei Mostri del 2014 350");
+                            ContoallaRovescia--;
+                        break;
+
+                        case "3":
+                            Console.Write($"è Stata annunciata la possibilità che lo studio di sviluppo Fromsoftware potrebbe star lavorando ad un gioco a tema Pirati. Cosa? volevi più di Una notizia? Questa è lapiù importante di tutte FIDATI");
+                            ContoallaRovescia--;
+                        break;
+
+                        case "4":
+                            Console.Write($"Mangia di meno e Mangia meglio, lo so sembra poco, ma è sostanzialmente quello ti direbbe un qualuncue dietologo");
+                            ContoallaRovescia--;
+                        break;
+
+                        case "5":
+                            Console.Write($"Metti la Testa fuori dalla finestra e guarda");
+                            ContoallaRovescia--;
+                        break;
+
+                        case "6":
+                            Console.Write($"Non credo che nel tuo caso serva");
+                            ContoallaRovescia--;
+                        break;
+                    }
+                    Console.WriteLine($"Tentativi rimasti {ContoallaRovescia}");
+                }
+                }
+            else if (Nome != Utente && Password != Utente2)
+            {
+                Console.WriteLine($"Accesso negato");
+                accesso = true;
+            }
+            }
+                while(accesso == false);
+        }
     }
