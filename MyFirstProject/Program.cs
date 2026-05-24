@@ -48,7 +48,10 @@ class Program
         // Es1pag59 ();
         // Es2pag59 ();
         // Es1pag114 ();
-        EsercizioComplessivo_Do_While_For();
+        // EsercizioComplessivo_Do_While_For();
+        // Es1pag76();
+        // Es2pag76();
+        Es3pag76();
     }
 
     public static void ReadLineExamples()
@@ -557,24 +560,47 @@ class Program
                 while(accesso == false);
         }
 
-        public static void Es1pag80()
+    public static void Es1pag76()
     {
-        
+        Console.WriteLine($"Inserisci il tuo Nome");
+        string Nome = (Console.ReadLine());
+        Console.Write($"Ciao {Nome},Cosa Posso Fare per Te?");
     }
-    public static void Es2pag80()
+    public static void Es2pag76()
     {
-        
+        Console.WriteLine($"inserisci un numero intero");
+
+        if (int.TryParse(Console.ReadLine(),out int Numero))
+        {
+            if(Numero % 2 == 0)
+            {
+                Console.WriteLine($"Il numero {Numero} è Pari");
+            }
+            else
+            {
+                Console.WriteLine($"Il numero {Numero} è Dispari");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Non hai inserito un dato valido");
+        }
     }
-    public static void Es3pag80()
+    public static void Es3pag76()
     {
-        
+        Console.WriteLine($"Inserisci un Numero e un Esponente");
+        Console.Write($"Numero: ");
+        int Numero = int.Parse(Console.ReadLine());
+        Console.Write($"Esponente: ");
+        int Esponente = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Il risultato è {Math.Pow(Numero,Esponente)}");
     }
     public static void Es1pag113()
     {
-        
+        // Non ho capito, Sono duro di comprendonio e non rieso a cambiare
     }
     public static void Es2pag113()
     {
-        
+        //Idem
     }
     }
