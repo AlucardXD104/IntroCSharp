@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Data.SqlTypes;
 using System.Net.Mail;
 using System.Runtime.Intrinsics.Arm;
 using System.Security;
@@ -555,4 +556,25 @@ class Program
             }
                 while(accesso == false);
         }
+
+        public static void Es1pag80()
+    {
+        
+    }
+    public static void Es2pag80()
+    {
+        
+    }
+    public static void Es3pag80()
+    {
+        
+    }
+    public static void Es1pag113()
+    {
+        
+    }
+    public static void Es2pag113()
+    {
+        
+    }
     }
