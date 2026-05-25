@@ -51,7 +51,8 @@ class Program
         // EsercizioComplessivo_Do_While_For();
         // Es1pag76();
         // Es2pag76();
-        Es3pag76();
+        // Es3pag76();
+        Es1pag113();
     }
 
     public static void ReadLineExamples()
@@ -374,13 +375,13 @@ class Program
             }
             else
             {
-                Console.WriteLine($"Hai Indovitato!!");
+                Console.WriteLine($"Hai Indovinato!!");
             }
         }
     }
     public static void Es1pag55()
     {
-        Console.Write($"Digita il numero corrispondente all'oppione desiderata");
+        Console.Write($"Digita il numero corrispondente al'oppzione desiderata");
         Console.WriteLine($"1 Visualizza Saldo-2 Deposita Denaro-3 Preleva denaro-4 Esci");
         int VisualizzaConto = 1;
         int DepositaDenaro = 2;
@@ -412,7 +413,7 @@ class Program
     {
         Console.WriteLine($"Inserisci Password");
         int Password = 2567;
-        int Ntentativi = 3;
+        int NTentativi = 3;
         bool accesso = false;
         do
         {
@@ -457,7 +458,7 @@ class Program
     // }
     public static void Es1pag59 ()
     {
-        Console.WriteLine($"inserisci il numero e ti dirò la sua tebella");
+        Console.WriteLine($"inserisci il numero e ti dirò la sua tabella");
         int N1 = int.Parse(Console.ReadLine());
         for (int i = 1; i <= 10; i++)
         {
@@ -491,73 +492,77 @@ class Program
     }
         public static void EsercizioComplessivo_Do_While_For()
         {
-            Console.WriteLine($"Impista i Tuoi Dati");
+            Console.WriteLine($"Imposta i Tuoi Dati");
             Console.WriteLine($"Imposta il Tuo Nome");
             string Utente = (Console.ReadLine());
             Console.WriteLine($"Imposta una Password");
             string Utente2 = (Console.ReadLine());
-            int ContoallaRovescia = 6;
+            int ControllaRovescia = 6;
             bool accesso = false;
-                do
+
+            do
             {
                 Console.WriteLine($"Inserisci Dati di Sblocco");
                 Console.Write($"Nome: ");
-                    string Nome = (Console.ReadLine());
+                string Nome = (Console.ReadLine());
+
                 Console.Write($"Password: ");
-                    string Password = (Console.ReadLine());
-                    if(Nome == Utente && Password == Utente2)
+                string Password = (Console.ReadLine());
+
+                if(Nome == Utente && Password == Utente2)
                 {
-                    for(int i = 0; i > ContoallaRovescia; i++)
-                    Console.WriteLine($"Accesso Consentito, Ora hai 6 scelte Prima di essere Espulso dal Programma");
-                    Console.WriteLine($"1.Dizionario");
-                    Console.WriteLine($"2.Bestiario di D&D");
-                    Console.WriteLine($"3.Notizie sul Mondo dei VideoGiochi");
-                    Console.WriteLine($"4.Consigli Per la Dieta");
-                    Console.WriteLine($"5.Previsioni del Tempo");
-                    Console.WriteLine($"6.Andar per Funghi?");
-                {
-                    switch (Console.ReadLine())
+                    for(int i = ControllaRovescia; i = 0; i--)
                     {
-                        case "1":
-                            Console.Write($"La Lingia Italiana ha al momento ha 2 milioni se si contano tutte le possibili declinazioni e coniugazioni");
-                            ContoallaRovescia--;
-                        break;
+                        Console.WriteLine($"Accesso Consentito, Ora hai 6 scelte Prima di essere Espulso dal Programma");
+                        Console.WriteLine($"1.Dizionario");
+                        Console.WriteLine($"2.Bestiario di D&D");
+                        Console.WriteLine($"3.Notizie sul Mondo dei VideoGiochi");
+                        Console.WriteLine($"4.Consigli Per la Dieta");
+                        Console.WriteLine($"5.Previsioni del Tempo");
+                        Console.WriteLine($"6.Andar per Funghi?");
 
-                        case "2":
-                            Console.Write($"Il Numero di Entità all'interno del bestiario varia a seconda del manuale, nella quinta edizione conta 500 creature, nel Manuale dei Mostri del 2014 350");
-                            ContoallaRovescia--;
-                        break;
+                        switch (Console.ReadLine())
+                        {
+                            case "1":
+                                Console.Write($"La Lingua Italiana ha al momento ha 2 milioni se si contano tutte le possibili declinazioni e coniugazioni");
+                                ControllaRovescia--;
+                            break;
 
-                        case "3":
-                            Console.Write($"è Stata annunciata la possibilità che lo studio di sviluppo Fromsoftware potrebbe star lavorando ad un gioco a tema Pirati. Cosa? volevi più di Una notizia? Questa è lapiù importante di tutte FIDATI");
-                            ContoallaRovescia--;
-                        break;
+                            case "2":
+                                Console.Write($"Il Numero di Entità all'interno del bestiario varia a seconda del manuale, nella quinta edizione conta 500 creature, nel Manuale dei Mostri del 2014 350");
+                                ControllaRovescia--;
+                            break;
 
-                        case "4":
-                            Console.Write($"Mangia di meno e Mangia meglio, lo so sembra poco, ma è sostanzialmente quello ti direbbe un qualuncue dietologo");
-                            ContoallaRovescia--;
-                        break;
+                            case "3":
+                                Console.Write($"è Stata annunciata la possibilità che lo studio di sviluppo FromSoftware potrebbe star lavorando ad un gioco a tema Pirati. Cosa? volevi più di Una notizia? Questa è la più importante di tutte FIDATI");
+                                ControllaRovescia--;
+                            break;
 
-                        case "5":
-                            Console.Write($"Metti la Testa fuori dalla finestra e guarda");
-                            ContoallaRovescia--;
-                        break;
+                            case "4":
+                                Console.Write($"Mangia di meno e Mangia meglio, lo so sembra poco, ma è sostanzialmente quello ti direbbe un qualunque dietologo");
+                                ControllaRovescia--;
+                            break;
 
-                        case "6":
-                            Console.Write($"Non credo che nel tuo caso serva");
-                            ContoallaRovescia--;
-                        break;
+                            case "5":
+                                Console.Write($"Metti la Testa fuori dalla finestra e guarda");
+                                ControllaRovescia--;
+                            break;
+
+                            case "6":
+                                Console.Write($"Non credo che nel tuo caso serva");
+                                ControllaRovescia--;
+                            break;
+                        }
+                        Console.WriteLine($"Tentativi rimasti {ControllaRovescia}");
                     }
-                    Console.WriteLine($"Tentativi rimasti {ContoallaRovescia}");
                 }
+                else if (Nome != Utente && Password != Utente2)
+                {
+                    Console.WriteLine($"Accesso negato");
+                    accesso = true;
                 }
-            else if (Nome != Utente && Password != Utente2)
-            {
-                Console.WriteLine($"Accesso negato");
-                accesso = true;
-            }
-            }
-                while(accesso == false);
+
+            }while(accesso == false);
         }
 
     public static void Es1pag76()
@@ -597,10 +602,24 @@ class Program
     }
     public static void Es1pag113()
     {
-        // Non ho capito, Sono duro di comprendonio e non rieso a cambiare
+        Console.WriteLine($"Quanti numeri desideri immettere");
+        int lunghezzaArray = int.Parse(Console.ReadLine());
+        int[] numeriArr = new int[lunghezzaArray];
+
+        for(int i = 0; 1 < numeriArr.Length; i++)
+        {
+            Console.WriteLine($"Imposta i numeri nella quanta che hai scelto");
+            numeriArr[i] = int.Parse(Console.ReadLine());
+        }
+        int somma = 0;
+        for(int i = 0; i < numeriArr.Length; i++)
+        {
+            somma += numeriArr[i];
+            Console.WriteLine($"la somma è {somma += numeriArr[i]}");
+        }
     }
     public static void Es2pag113()
     {
-        //Idem
+        
     }
     }
