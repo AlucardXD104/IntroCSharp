@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Studente\\.nuget\\packages\\": {}
+    "C:\\Users\\Stiudente\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "projectUniqueName": "C:\\Users\\Stiudente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
       "projectName": "MyFirstProject",
-      "projectPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
-      "packagesPath": "C:\\Users\\Studente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\obj\\",
+      "projectPath": "C:\\Users\\Stiudente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "packagesPath": "C:\\Users\\Stiudente\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Stiudente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Studente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Stiudente\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

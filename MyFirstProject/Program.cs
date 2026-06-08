@@ -52,7 +52,9 @@ class Program
         // Es1pag76();
         // Es2pag76();
         // Es3pag76();
-        Es1pag113();
+        // Es1pag113();
+        // MatrixExemple();
+        MainDiagonal();
     }
 
     public static void ReadLineExamples()
@@ -425,12 +427,12 @@ class Program
             }
             else
             {
-                Ntentativi--;
+                NTentativi--;
                 Console.WriteLine($"Accesso Negato");
             }
-            Console.WriteLine($"{Ntentativi}");
+            Console.WriteLine($"{NTentativi}");
         }  
-        while (accesso == false && Ntentativi > 0);
+        while (accesso == false && NTentativi > 0);
     }
     // public static void Es2pag57 ()
     // {
@@ -511,7 +513,7 @@ class Program
 
                 if(Nome == Utente && Password == Utente2)
                 {
-                    for(int i = ControllaRovescia; i = 0; i--)
+                    for(int i = ControllaRovescia; i == 0; i--)
                     {
                         Console.WriteLine($"Accesso Consentito, Ora hai 6 scelte Prima di essere Espulso dal Programma");
                         Console.WriteLine($"1.Dizionario");
@@ -618,7 +620,78 @@ class Program
             Console.WriteLine($"la somma è {somma += numeriArr[i]}");
         }
     }
-    public static void Es2pag113()
+    public static void MatrixExemple()
+    {
+        Console.Write($"Inserisci numero righe: ");
+        int nRow = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Inserisci numero colonne: ");
+        int nColumn = int.Parse(Console.ReadLine());
+        
+        int[,] matrice = new int[nRow, nColumn];
+
+        for(int r=0; r < matrice.GetLength(0); r++)
+        {
+            for(int c=0; c < matrice.GetLength(1); c++)
+            {
+                matrice[r,c] = (c + r+ 1) * 10;
+                Console.WriteLine($"Matrice [{r}, {c}] è uguale a {matrice[r,c]}");
+            }
+            
+        }
+    }
+    public static void MainDiagonal()
+    {
+        Console.Write($"Inserisci numero delle dimensioni: ");
+        int dimensions = int.Parse(Console.ReadLine());
+    
+        int[,] matrice = new int[dimensions, dimensions];
+
+        Random rnd = new Random();
+        for(int r=0; r < matrice.GetLength(0); r++)
+        {
+            for(int c=0; c < matrice.GetLength(0); c++)
+            {
+                matrice[r, c] = rnd.Next(1, 11);
+                Console.Write($"{matrice[r, c]}  ");
+                
+            }
+            Console.WriteLine($"");
+            
+        }
+        
+        int sumDiag1 = 0;
+        for(int r=0; r < matrice.GetLength(0); r++)
+        {
+            for(int c=0; c < matrice.GetLength(0); c++)
+            {
+                if(c == r)
+                {
+                    sumDiag1 += matrice[r,c];
+                    Console.WriteLine($"Elemento indiagonale di r{r} e c{c} è {matrice[r,c]}");
+                    
+                }
+            }
+            
+        }
+        Console.WriteLine($"\nLa somma dell adiagonale principale è {sumDiag1}\n");
+
+        int sumDiag2 = 0;
+
+        for(int r =0 ; r < dimensions; r++)
+        {
+            for(int c =0 ; c < dimensions; c++)
+            {
+                if(r + c == dimensions - 1)
+                {
+                    sumDiag2 += matrice[r, c];
+                    Console.WriteLine($"Elemento in diagonale2 di r{r} e c{c} è {matrice[r,c]}");
+                }
+            }
+            
+        }
+        Console.WriteLine($"\nLa somma dell adiagonale principale è {sumDiag2}\n");
+    }
+    public static void ListExemples()
     {
         
     }
