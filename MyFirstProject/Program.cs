@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Net.Mail;
 using System.Runtime.Intrinsics.Arm;
@@ -38,23 +39,25 @@ class Program
         // EsercizioIFELSE6pag45();
         // EsercizioIFELSE7pag45();
         // EsercizioIFELSE8pag46();
-        // Es1pag48 ();
-        // Es1pag54 ();
-        // Es2pag54 ();
-        // Es1pag55 ();
-        // Es1pag57 ();
-        // Es2pag57 ();
-        // Es3pag57 ();
-        // Es1pag59 ();
-        // Es2pag59 ();
-        // Es1pag114 ();
+        // Es1pag48();
+        // Es1pag54();
+        // Es2pag54();
+        // Es1pag55();
+        // Es1pag57();
+        // Es2pag57();
+        // Es3pag57();
+        // Es1pag59();
+        // Es2pag59();
+        // Es1pag114();
         // EsercizioComplessivo_Do_While_For();
         // Es1pag76();
         // Es2pag76();
         // Es3pag76();
         // Es1pag113();
         // MatrixExemple();
-        MainDiagonal();
+        // MainDiagonal();
+        // Es1Pag114();
+        Es2Pag114();
     }
 
     public static void ReadLineExamples()
@@ -190,7 +193,7 @@ class Program
             Console.Write($"il conto ammota a {Prezzo}€");
         }
     }
-    public static void EsercizioIFELSE3pag39 ()
+    public static void EsercizioIFELSE3pag39()
     {
         Console.WriteLine($"Scrivi Tre Numeri Interi");
         int N1 = int.Parse(Console.ReadLine());
@@ -299,7 +302,7 @@ class Program
             Console.WriteLine($"{temperatura} Rankine");
         }
     }
-    public static void Es1pag48 ()
+    public static void Es1pag48()
     {
         Console.WriteLine($"Inserisci un Numero da 1 a 7");
         
@@ -338,7 +341,7 @@ class Program
             break;
         }
     }
-    public static void Es1pag54 ()
+    public static void Es1pag54()
     {
         Console.WriteLine($"Inserisci dei numeri interi positivi");
         int numero = 0,somma = 0;
@@ -359,7 +362,7 @@ class Program
         }
         Console.WriteLine($"La somma dei numeri inseriti è {somma}");
     }
-    public static void Es2pag54 ()
+    public static void Es2pag54()
     {
         Console.WriteLine($"Indovina il numero segreto Fra 0 e 20");
         int NumeroS = 11;
@@ -411,7 +414,7 @@ class Program
             }
         }
     }
-    public static void Es1pag57 ()
+    public static void Es1pag57()
     {
         Console.WriteLine($"Inserisci Password");
         int Password = 2567;
@@ -458,7 +461,7 @@ class Program
     //     }
     //     while (esci == false);
     // }
-    public static void Es1pag59 ()
+    public static void Es1pag59()
     {
         Console.WriteLine($"inserisci il numero e ti dirò la sua tabella");
         int N1 = int.Parse(Console.ReadLine());
@@ -467,7 +470,7 @@ class Program
             Console.WriteLine($"{N1} * {i}={N1 * i}");
         }
     }
-    public static void Es2pag59 ()
+    public static void Es2pag59()
     {
         Console.WriteLine($"quanti numeri vuoi inserire?");
         int volte = int.Parse(Console.ReadLine());
@@ -566,7 +569,6 @@ class Program
 
             }while(accesso == false);
         }
-
     public static void Es1pag76()
     {
         Console.WriteLine($"Inserisci il tuo Nome");
@@ -691,8 +693,36 @@ class Program
         }
         Console.WriteLine($"\nLa somma dell adiagonale principale è {sumDiag2}\n");
     }
-    public static void ListExemples()
+    public static void Es1Pag114()
     {
-        
+        Console.Write($"Inserisci il numero delle Colonne: ");
+        int nColonne = int.Parse(Console.ReadLine());
+        Console.Write($"Inserisci il numero di Righe: ");
+        int nRighe = int.Parse(Console.ReadLine());
+
+        int[,] Matrice = new int[nColonne, nRighe];
+
+        int sumMat = 0;
+        for(int r = 0; r < Matrice.GetLength(0); r++)
+        {
+            for(int c = 0; c < Matrice.GetLength(1); c++)
+            {
+                Matrice[r, c] = (c + r + 1) * 10;
+                sumMat += Matrice[r, c];
+                Console.WriteLine($"\nMatrice[{r},{c}] è uguale a{Matrice[r,c]}\n");
+                
+            }
+        }
+        Console.WriteLine($"\nLa somma di tutti i valoro è {sumMat}\n");
+    }
+
+    public static void Es2Pag114()
+    {
+        //Sono un fallito
+    }
+
+    public static void Es3Pag114()
+    {
+        //Sono un MEGA fallito
     }
     }
