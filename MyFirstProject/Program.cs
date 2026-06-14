@@ -57,7 +57,10 @@ class Program
         // MatrixExemple();
         // MainDiagonal();
         // Es1Pag114();
-        Es2Pag114();
+        // Es2Pag114();
+        // Es1Pag115();
+        // Es2Pag115();
+        Es3Pag115();
     }
 
     public static void ReadLineExamples()
@@ -495,7 +498,7 @@ class Program
         }
         Console.WriteLine($"Somma Dei Dati Inseriti {somma + lunghezza}");
     }
-        public static void EsercizioComplessivo_Do_While_For()
+    public static void EsercizioComplessivo_Do_While_For()
         {
             Console.WriteLine($"Imposta i Tuoi Dati");
             Console.WriteLine($"Imposta il Tuo Nome");
@@ -714,15 +717,100 @@ class Program
             }
         }
         Console.WriteLine($"\nLa somma di tutti i valoro è {sumMat}\n");
-    }
 
+        int sumRighe = 0;
+        for(int r = 0; r < Matrice.GetLength(0); r++)
+        {
+            for(int c = 0; c < Matrice.GetLength(1); c++)
+            {
+                sumRighe += Matrice[r, c];
+            }
+            Console.WriteLine($"somma riga {r} uguale {sumRighe}");
+            sumRighe = 0;
+        }
+
+        int sumColonne =0;
+        for(int c = 0; c < Matrice.GetLength(1); c++)
+        {
+            for(int r = 0; r < Matrice.GetLength(0); r++)
+            {
+                sumColonne += Matrice[r, c];
+            }
+            Console.WriteLine($"somma della colonna {c} uguale {sumColonne}");
+            sumColonne = 0;
+        }
+    }
     public static void Es2Pag114()
     {
-        //Sono un fallito
+        
     }
-
     public static void Es3Pag114()
     {
         //Sono un MEGA fallito
+    }
+    public static void Es1Pag115()
+    {
+        Console.WriteLine($"Inserisci 5 Numeri");
+        List<int> Numeri = new List<int>();
+        for(int i = 0; i < 5 ; i++)
+        {
+            Numeri.Add(int.Parse(Console.ReadLine()));
+        }
+
+        Console.WriteLine($"Rimuovi 3 numeri");
+        for(int i = 0; i < 3 ; i++)
+        {
+            Numeri.Remove(int.Parse(Console.ReadLine()));
+        }
+
+        Console.WriteLine($"Numeri Rimanenti");
+        foreach(int Nc in Numeri)
+        {
+            Console.Write($"{Nc},");
+        }
+    }
+    public static void Es2Pag115()
+    {
+        List<int> Lista = new List<int>();
+        Random rnd = new Random();
+        for(int i = 0; i < 10; i++)
+        {
+            Lista.Add(rnd.Next(1, 101));
+        }
+        foreach(int N in Lista)
+        {
+            Console.WriteLine($"{N}");
+        }
+        Console.WriteLine($"Inserisci un numero");
+        int Numero = int.Parse(Console.ReadLine());
+        if(Numero <= 101)
+        {
+            Console.WriteLine($"il numero {Numero} è Presente nella lista");
+        }
+        else
+        {
+            Console.WriteLine($"Il numero {Numero} non è èresente nella lista");
+        }
+    }
+    public static void Es3Pag115()
+    {
+        List<int> Lista = new List<int>();
+        Random rnd = new Random();
+        for(int i = 0; i < 15; i++)
+        {
+            Lista.Add(rnd.Next(1, 21));
+        }
+        Console.WriteLine($"Lista originale");
+        foreach(int N in Lista)
+        {
+            Console.WriteLine($"numeri in lista: {N}");
+        }
+        List<int> ListaSenzaDuplicati = Lista.Distinct().ToList();
+        ListaSenzaDuplicati.Sort();
+        Console.WriteLine($"Lista senza Duplicati");
+        foreach(int N in ListaSenzaDuplicati)
+        {
+            Console.WriteLine($"Lista corretta {N}");
+        }
     }
     }
