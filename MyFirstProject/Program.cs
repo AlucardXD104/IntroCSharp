@@ -62,7 +62,6 @@ class Program
         // Es2Pag115();
         Es3Pag115();
     }
-
     public static void ReadLineExamples()
     {
         // Console.Write($"Dì il tuo nome e congniome: ");
@@ -440,7 +439,7 @@ class Program
         }  
         while (accesso == false && NTentativi > 0);
     }
-    // public static void Es2pag57 ()
+    // public static void Es2pag57()
     // {
     //     Console.WriteLine($"Inserisci numeri interi, se inserisci lo zero annulli il programma");
     //     bool Esci = false;
@@ -779,13 +778,14 @@ class Program
         }
         foreach(int N in Lista)
         {
-            Console.WriteLine($"{N}");
+            Console.WriteLine($"\n{N}\n");
         }
         Console.WriteLine($"Inserisci un numero");
         int Numero = int.Parse(Console.ReadLine());
-        if(Numero <= 101)
+
+        if(Lista.Contains(Numero))
         {
-            Console.WriteLine($"il numero {Numero} è Presente nella lista");
+            Console.WriteLine($"il numero {Numero} è Presente nella lista, in posizione {Lista.IndexOf(Numero)}");
         }
         else
         {
@@ -813,4 +813,4 @@ class Program
             Console.WriteLine($"Lista corretta {N}");
         }
     }
-    }
+}
