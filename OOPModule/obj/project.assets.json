@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
-      "projectName": "MyFirstProject",
-      "projectPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\MyFirstProject.csproj",
+      "projectUniqueName": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\OOPModule\\OOPModule.csproj",
+      "projectName": "OOPModule",
+      "projectPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\OOPModule\\OOPModule.csproj",
       "packagesPath": "C:\\Users\\Studente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\MyFirstProject\\obj\\",
+      "outputPath": "C:\\Users\\Studente\\Documents\\GitHub\\IntroCSharp\\OOPModule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Studente\\AppData\\Roaming\\NuGet\\NuGet.Config"

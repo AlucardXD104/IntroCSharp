@@ -1,0 +1,15 @@
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.AssemblyInfoInputs.cache
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.AssemblyInfo.cs
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.csproj.CoreCompileInputs.cache
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.sourcelink.json
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\bin\Debug\net10.0\OOPModule.exe
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\bin\Debug\net10.0\OOPModule.deps.json
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\bin\Debug\net10.0\OOPModule.runtimeconfig.json
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\bin\Debug\net10.0\OOPModule.dll
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\bin\Debug\net10.0\OOPModule.pdb
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.dll
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\refint\OOPModule.dll
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.pdb
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\OOPModule.genruntimeconfig.cache
+C:\Users\Studente\Documents\GitHub\IntroCSharp\OOPModule\obj\Debug\net10.0\ref\OOPModule.dll
