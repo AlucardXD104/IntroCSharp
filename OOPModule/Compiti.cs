@@ -1,4 +1,5 @@
 using System.Net.Mail;
+using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
 
 class Studente
@@ -51,4 +52,38 @@ class Calcolatrice
             Console.WriteLine($"Il segno non è al momento Presente");
         }
     }
+}
+class Libro
+{
+    //Attributi
+    public string Nome ="";
+    public string Autore ="";
+    public int AnnoDiPubblicazione;
+
+    //Comportamenti
+    public void Libreria()
+    {
+        Console.WriteLine($"Il Titolo del Libro è {Nome.ToString()} dell'Autore {Autore} Publicsto l'Anno {AnnoDiPubblicazione}");
+    }
+}
+class Macchina
+{
+    //Attributi
+    public string NomeUtente="";
+    public int Credito;
+
+    public string Motore ="";
+    public float VelocitaMax;
+    public int SospensioniMax;
+    public int NrModificate;
+
+    //Comportamenti
+    public void Garage()
+    {
+        Console.WriteLine($"La macchina di {NomeUtente}, Ha la Seguente Componentistica \n Motore: {Motore}\n Velocità: {VelocitaMax}\n Sospensioni: {SospensioniMax}\n La Macchina di {NomeUtente} è stata modificata {NrModificate} Volte\n il Credito Rimanente è {Credito}");
+    }
+}
+class Film
+{
+    //I Give up
 }
