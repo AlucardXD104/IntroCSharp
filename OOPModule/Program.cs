@@ -1,6 +1,8 @@
 ﻿using System.Data;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
 public class Program
@@ -12,7 +14,7 @@ public static void Main(string[] args)
             // MainStudente();
             // MainPersona();
             // MainCalcolatrice();
-            // MainStudente2();
+            MainStudente2();
             // MainLibro();
             // MainMacchina();
             // MainFilm();
@@ -83,13 +85,26 @@ public static void Main(string[] args)
     }
     public static void MainStudente2()
     {
-        studente2 S1 = new studente2();
-        string Nome ="Bartolomeo";
-        int V1 = 4;
-        int V2 = 3;
-        // S1.Valori(ref V1);
-        // S1.Valori(ref V2);
+        studente2 Tizio1 = new studente2();
+        Console.Write($"Ciao, Inserisci il tuo Nome: ");
+        Tizio1.Nome=Console.ReadLine();
+        Random rnd = new Random();
+        Tizio1.Voto1=rnd.Next(0,11);
+        Tizio1.Voto2=rnd.Next(0,11);
     }
+    public bool ElaboraStudente(studente2 stu, int Bonus, ref int Voto1, ref int Voto2)
+    {
+            double Med=stu.Media(Bonus);
+        if (Med>= 6)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Spostsa Media int qua, e cambia int Voto=Voto + Bonus, in Voto+=Bonus.
     public static void MainLibro()
     {
         Libro Libro1 = new Libro();
@@ -97,21 +112,25 @@ public static void Main(string[] args)
         Libro1.Autore = "Pietro Eustachio Peloso";
         Libro1.AnnoDiPubblicazione = 1999;
         
-        Libro1.Libreria();
+        Console.WriteLine($"{Libro1}");
+        
 
         Libro Libro2 = new Libro();
         Libro2.Nome = "Il Gufo dell'Ungheria";
         Libro2.Autore = "Zoltàn Horváth";
         Libro2.AnnoDiPubblicazione = 1267;
 
-        Libro2.Libreria();
+        Console.WriteLine($"{Libro2}");
+
 
         Libro Libro3 = new Libro();
         Libro3.Nome = "Come L'acqua";
         Libro3.Autore = "Pietro Eustachio Peloso";
         Libro3.AnnoDiPubblicazione = 2015;
 
-        Libro3.Libreria();
+        Console.WriteLine($"{Libro3}");
+
+
 
         if (Libro1.Nome.Equals(Libro3.Nome))
         {
@@ -160,8 +179,8 @@ public static void Main(string[] args)
             Utente1.SospensioniMax = int.Parse(Console.ReadLine());
             Utente1.Credito--;
             Utente1.NrModificate++;
-
-            Utente1.Garage();
+            Console.WriteLine($"{Utente1}");
+            
         }
         else
         {
@@ -199,9 +218,8 @@ public static void Main(string[] args)
             Utente1.SospensioniMax = int.Parse(Console.ReadLine());
             Utente1.Credito--;
             Utente1.NrModificate++;
-
-            Utente2.Garage();
-
+            Console.WriteLine($"{Utente2}");
+            
         }
         else
         {
@@ -238,8 +256,8 @@ public static void Main(string[] args)
             Utente1.SospensioniMax = int.Parse(Console.ReadLine());
             Utente1.Credito--;
             Utente1.NrModificate++;
+            Console.WriteLine($"{Utente3}");
 
-            Utente3.Garage();
         }
         else
         {

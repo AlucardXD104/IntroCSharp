@@ -61,9 +61,21 @@ class Libro
     public int AnnoDiPubblicazione;
 
     //Comportamenti
-    public void Libreria()
+    public override string ToString()
     {
-        Console.WriteLine($"Il Titolo del Libro è {Nome.ToString()} dell'Autore {Autore} Publicsto l'Anno {AnnoDiPubblicazione}");
+        return $"Il Titolo del Libro è {Nome} dell'Autore {Autore} Publicato l'Anno {AnnoDiPubblicazione}";
+    }
+    public override bool Equals(object? obj)
+    {
+        if(obj is Libro other)
+        {
+            return Nome==other.Nome && Autore==other.Autore;
+        }
+        return false;
+    }
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(Nome, Autore, AnnoDiPubblicazione);
     }
 }
 class Macchina
@@ -78,9 +90,21 @@ class Macchina
     public int NrModificate;
 
     //Comportamenti
-    public void Garage()
+    public override string ToString()
     {
-        Console.WriteLine($"La macchina di {NomeUtente}, Ha la Seguente Componentistica \n Motore: {Motore}\n Velocità: {VelocitaMax}\n Sospensioni: {SospensioniMax}\n La Macchina di {NomeUtente} è stata modificata {NrModificate} Volte\n il Credito Rimanente è {Credito}");
+        return $"La macchina di {NomeUtente}, Ha la Seguente Componentistica \n Motore: {Motore}\n Velocità: {VelocitaMax}\n Sospensioni: {SospensioniMax}\n La Macchina di {NomeUtente} è stata modificata {NrModificate} Volte\n il Credito Rimanente è {Credito}";
+    }
+    public override bool Equals(object? obj)
+    {
+        if(obj is Macchina other)
+        {
+            return Motore==other.Motore && NomeUtente==other.NomeUtente;
+        }
+        return false;
+    }
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(NomeUtente,Motore,VelocitaMax);
     }
 }
 class Film
