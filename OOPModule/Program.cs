@@ -14,11 +14,10 @@ public static void Main(string[] args)
             // MainStudente();
             // MainPersona();
             // MainCalcolatrice();
-            MainStudente2();
+            // MainStudente2();
             // MainLibro();
             // MainMacchina();
-            // MainFilm();
-
+            MainFilm();
 }
     public static void MainCane()
     {
@@ -94,8 +93,8 @@ public static void Main(string[] args)
     }
     public bool ElaboraStudente(studente2 stu, int Bonus, ref int Voto1, ref int Voto2)
     {
-            double Med=stu.Media(Bonus);
-        if (Med>= 6)
+        double Med=stu.Media(Bonus);
+        if (Med >= 6)
         {
             return true;
         }
@@ -266,6 +265,58 @@ public static void Main(string[] args)
     }
     public static void MainFilm()
     {
-        //I Give up
+        Film Film1 = new Film();
+        Film1.Titolo ="La Parla di Pacciani";
+        Film1.Regista ="Rosario Bevacqua e Pietro Fioravanti";
+        Film1.Anno = 2028;
+        Film1.Genere = "Supereroistico";
+
+        Film Film2 = new Film();
+        Film2.Titolo ="Titanic";
+        Film2.Regista ="James Cameron";
+        Film2.Anno = 1998;
+        Film2.Genere = "Romantico";
+
+        Film Film3 = new Film();
+        Film3.Titolo ="Mission Impossible";
+        Film3.Regista ="Brian De Palma";
+        Film3.Anno = 1996;
+        Film3.Genere = "Azzione";
+
+        Film Film4 = new Film();
+        Film4.Titolo ="I Signore degli Anelli, La Compagnia dell'Anello";
+        Film4.Regista ="Peter Jekson";
+        Film4.Anno = 2002;
+        Film4.Genere = "Fantasy";
+
+        Film Film5 = new Film();
+        Film5.Titolo ="Shrek";
+        Film5.Regista ="Andrew Adamson e Vicky Jenson";
+        Film5.Anno = 2001;
+        Film5.Genere = "Animazione";
+
+        Film Film6 = new Film();
+        Film6.Titolo ="Halloween";
+        Film6.Regista ="John Carpenter";
+        Film6.Anno = 1979;
+        Film6.Genere = "Horror";
+
+        Film Film7 = new Film();
+        Film7.Titolo ="Jhon Wick";
+        Film7.Regista ="Chad Stahelski";
+        Film7.Anno = 2015;
+        Film7.Genere = "Azione";
+
+        Film Film8 = new Film();
+        Film8.Titolo ="Superman";
+        Film8.Regista ="James Gunn";
+        Film8.Anno = 2025;
+        Film8.Genere = "Supereroistico";
+
+        Film Film9 = new Film();
+        Film9.Titolo ="Evil Dead";
+        Film9.Regista ="Sam Raimi";
+        Film9.Anno = 1981;
+        Film9.Genere = "Horror";
     }
 }

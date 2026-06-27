@@ -109,5 +109,15 @@ class Macchina
 }
 class Film
 {
-    //I Give up
+//Attributi
+public string Titolo= "";
+public string Regista="";
+public int Anno;
+public string Genere="";
+
+//Metodi
+public static List<string> FilmList = new List<string>(Film);
+
+    
+
 }
