@@ -281,7 +281,7 @@ public static void Main(string[] args)
         Film3.Titolo ="Mission Impossible";
         Film3.Regista ="Brian De Palma";
         Film3.Anno = 1996;
-        Film3.Genere = "Azzione";
+        Film3.Genere = "Azione";
 
         Film Film4 = new Film();
         Film4.Titolo ="I Signore degli Anelli, La Compagnia dell'Anello";
@@ -318,5 +318,45 @@ public static void Main(string[] args)
         Film9.Regista ="Sam Raimi";
         Film9.Anno = 1981;
         Film9.Genere = "Horror";
+
+        Console.Write($"Scegli un genere di film tra: \n 1-Supereroistico \n 2-Horror \n 3-Azione \n 4-romantico \n 5-Animazione \n 6-Fantasy \n\n scrivi:");
+        {
+            switch (Console.ReadLine())
+            {
+                case "Supereroistico":
+                Console.WriteLine("Film di Genere Supereroistico:");
+                Console.WriteLine($"Titolo:{Film1.Titolo}\n Regista:{Film1.Regista}\n Anno:{Film1.Anno}");
+                break;
+
+                case "Horror":
+                Console.WriteLine("Film di Genere Horror:");
+                Console.WriteLine($"Titolo:{Film6.Titolo}\n Regista:{Film6.Regista}\n Anno:{Film6.Anno}");
+                Console.WriteLine("-----------------");
+                Console.WriteLine($"Titolo:{Film9.Titolo}\n Regista:{Film9.Regista}\n Anno:{Film9.Anno}");
+                break;
+
+                case"Azione":
+                Console.WriteLine("Film di Genere Azione:");
+                Console.WriteLine($"Titolo:{Film3.Titolo}\n Regista:{Film3.Regista}\n Anno:{Film3.Anno}");
+                Console.WriteLine("-----------------");
+                Console.WriteLine($"Titolo:{Film7.Titolo}\n Regista:{Film7.Regista}\n Anno:{Film7.Anno}");
+                break;
+
+                case"Romantico":
+                Console.WriteLine("Film di Genere Romantico:");
+                Console.WriteLine($"Titolo:{Film2.Titolo}\n Regista:{Film2.Regista}\n Anno:{Film2.Anno}");
+                break;
+
+                case"Animazione":
+                Console.WriteLine("Film di Genere Animazione:");
+                Console.WriteLine($"Titolo:{Film5.Titolo}\n Regista:{Film5.Regista}\n Anno:{Film5.Anno}");
+                break;
+
+                case"fantasy":
+                Console.WriteLine("Film di Genere Fantasy:");
+                Console.WriteLine($"Titolo:{Film4.Titolo}\n Regista:{Film4.Regista}\n Anno:{Film4.Anno}");
+                break;
+            }
+        }
     }
 }

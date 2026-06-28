@@ -116,8 +116,15 @@ public int Anno;
 public string Genere="";
 
 //Metodi
-public static List<string> FilmList = new List<string>(Film);
-
-    
-
+    public void Generi()
+    {
+        List<string> videoTeca = new List<string>();
+        videoTeca.Add("Supereroistico");
+        videoTeca.Add("Horror");
+        videoTeca.Add("Azione");
+        videoTeca.Add("Romantico");
+        videoTeca.Add("Animazione");
+        videoTeca.Add("Fantasy");
+        //Funzionare funziona, Ma la lista per come o svolto l'esercizio non serve a nulla e non saprei come implementarla.
+    }
 }

@@ -41,4 +41,5 @@ public double Media(int Bonus)
     {
         return HashCode.Combine(Nome);
     }
+    //Non Merito di vivere, sotto il suo stesso sole prof
 }
