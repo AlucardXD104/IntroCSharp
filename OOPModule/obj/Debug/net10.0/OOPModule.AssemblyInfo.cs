@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OOPModule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b477783403b31a4a908b574f8cb6315659957185")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2304067748a79714b5baafeab84537c967c8587c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OOPModule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OOPModule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

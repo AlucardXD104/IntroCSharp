@@ -17,7 +17,8 @@ public static void Main(string[] args)
             // MainStudente2();
             // MainLibro();
             // MainMacchina();
-            MainFilm();
+            // MainFilm();
+            MainVeicolo();
 }
     public static void MainCane()
     {
@@ -358,5 +359,10 @@ public static void Main(string[] args)
                 break;
             }
         }
+    }
+    public static void MainVeicolo()
+    {
+        List<Veicolo> Officina = new List<Veicolo>();
+        Officina.Add(Auto);
     }
 }
