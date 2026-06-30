@@ -362,7 +362,18 @@ public static void Main(string[] args)
     }
     public static void MainVeicolo()
     {
+        Auto Auto = new Auto("22");
+        Auto.Targa="ML678GG";
+        Moto Moto = new Moto("33");
+        Camion Camion = new Camion("44");
         List<Veicolo> Officina = new List<Veicolo>();
         Officina.Add(Auto);
+        Officina.Add(Moto);
+        Officina.Add(Camion);
+        foreach(Veicolo v in Officina)
+        {
+            v.Targa();
+            v.Ripara();
+        }
     }
 }

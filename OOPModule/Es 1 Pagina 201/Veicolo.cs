@@ -1,17 +1,18 @@
 public class Veicolo
 {
-    private string Targa="";
+    public string Targa="";
     public virtual void Ripara()
     {
         Console.WriteLine($"Il Veicolo Viene Controllato");
     }
-    public Veicolo(string Targa)
+    public Veicolo(string targa)
     {
-        Targa = Targa;
+        Targa = targa;
     }
 }
 class Auto : Veicolo
 {
+        public Auto(string targa) : base(targa){}
     public override void Ripara()
     {
         Console.WriteLine($"Controllo Olio, Freni e Motore");
@@ -19,6 +20,7 @@ class Auto : Veicolo
 }
 class Moto : Veicolo
 {
+        public Moto(string targa) : base(targa){}
     public override void Ripara()
     {
         Console.WriteLine($"Controllo catena, Freni e Gomme");
@@ -26,6 +28,7 @@ class Moto : Veicolo
 }
 class Camion : Veicolo
 {
+        public Camion(string targa) : base(targa){}
     public override void Ripara()
     {
         Console.WriteLine("Controllo Sospensioni, Freni rinforzati e Carico del camion");
